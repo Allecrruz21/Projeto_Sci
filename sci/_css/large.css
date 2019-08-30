@@ -1,0 +1,488 @@
+		/* CSS Document */
+	@charset "UTF-8";
+
+	@font-face {
+	Font-Family: 'FonteHeader';
+	src: url("../_fonts/_Quicksand/Quicksand-Bold.ttf");
+	}
+
+	@font-face {
+	Font-Family: 'FonteCorpo';
+	src: url("../_fonts/_Roboto_Slab/RobotoSlab-Bold.ttf");
+	}
+
+	@font-face {
+	Font-Family: 'Rodape';
+	src: url("../_fonts/_Josefin/JosefinSans-Regular.ttf");
+	}
+
+	@font-face {
+	Font-Family: 'FonteInput';
+	src: url("../_fonts/_Oxygen/Oxygen-Regular.ttf");
+	}
+	
+	@font-face {
+	Font-Family: 'Letra';
+	src: url("../_fonts/_Raleway/Raleway-Light.ttf");
+	}
+
+	@font-face {
+	Font-Family: 'Botao';
+	src: url("../_fonts/_OpenSans/OpenSansCondensed-LightItalic.ttf");
+	}
+	
+	/*=========== FORMATAÇÃO PADRÃO  ===============*/
+	
+	header#superior {
+	position: relative;
+	background-color: #000000;
+	margin: -10px -10px 0px -10px;
+	padding: 80px 20px -10px 120px;
+	border-bottom: 2px #cccccc solid;	
+	}
+	
+	body {	
+	background: url("../_sources/cidade.jpg")no-repeat center fixed;
+	background-attachment: fixed;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+	label#centro {
+	Text-Align: center;	
+	color: #ffffff;
+	Font-Family: Rodape;
+	padding: 1px 1px 1px 450px;
+	}
+	
+	form#acesso {
+	box-shadow: 0px 0px 10px #ffffff;
+	border-radius:10px;
+	background-color: #888888;
+	}
+	
+	header#superior img{
+	position: relative;
+	margin: -100px 1px 5px 190px;
+	}
+	
+	footer#rodape{
+	background-color: #000000;
+	clear: both;
+	border-top: 2px #cccccc solid;
+	margin: 1px -10px -10px -10px;
+	height: 130px;
+	}
+
+	/*=========== FORMATAÇÃO DE LETRAS H =============*/
+	
+	h1{
+	position: relative;
+	font-family: FonteHeader;
+	color: white;
+	font-size: 40px;
+	margin: 0px -100px 0px 200px;
+	padding: 40px 1px 20px 150px;
+	}
+	
+	h3 {
+	color: #ffffff;
+	font-family: FonteHeader;
+	}
+	
+	h4{
+	background-color: #222222;	
+	color: white;
+	font-family: FonteCorpo;
+	text-align: center;
+	padding: 10px;
+	margin: 1px -10px 1px -10px;
+	font-size: 20px;
+	border-bottom: 2px #ff9900 solid;
+	}
+ 
+	h6 {
+	background-color: #222222;	
+	color: white;
+	font-family: FonteHeader; 
+	font-size: 14px;
+	text-align: center;
+	margin: -8px -12px 1px -13px;
+	}
+
+	
+	h5 {
+	background-color: #222222;	
+	color: white;
+	font-family: FonteHeader; 
+	font-size: 14px;
+	text-align: center;
+	margin: -8px -12px 1px -13px;
+	}
+	
+	/*============ LOGIN DO S.C.I==============*/
+	
+	div#caixa2 {
+	box-shadow: 0px 0px 10px #ffffff;
+	height: 290px;
+	width: 400px;
+	border-radius:10px;
+	background-color: #888888;
+	margin: 35px 1px 1px 80px;
+	}
+	
+	div#caixa1 {
+	height: 400px;
+	width: 550px;
+	margin: 50px auto 100px auto;					
+	background-color: #444444;
+	}
+	
+	h4#log {
+	width: 530px;
+	margin: 0px 0px 0px 0px;
+	border-bottom: 2px #ff9900 solid;
+	}	
+	
+	div#btnacesso {
+	
+	 margin-left:100px;
+	 
+	}
+	
+	input#cpdomain {
+	margin: 1px 1px 1px 100px;	
+	border-radius: 6px;
+	Font-Family: FonteInput;
+	text-align: center;
+	}
+
+	input#cpadmin {
+	margin: 1px 1px 1px 100px;	
+	border-radius: 6px;
+	Font-Family: FonteInput;	
+	text-align: center;
+	}
+
+	input#cppass {
+	margin: 1px 1px 1px 100px;	
+	border-radius: 6px;
+	Font-Family: FonteInput;	
+	text-align: center;
+	}	
+	
+	div#dom {
+	margin: 1px 1px 1px 185px;	
+	}	
+	
+	div#adm {
+	margin: 1px 1px 1px 185px;	
+	}	
+	
+	div#pas {
+	margin: 1px 1px 1px 185px;	
+	}	
+	
+	
+	/*============ MENU S.C.I ==============*/
+	
+	
+	div#container {
+	width: 650px;
+	height: 450px;
+	margin: 20px 10px 20px 150px;
+	}
+	
+	div#acesso{
+	margin-left: 25px;
+	background:rgba(255,255,255,.2);
+	display: block;
+	width: 200px;
+	float: left;				
+	padding: 1px 1px 5px 1px;
+	}
+	
+	div#lateral {
+	display: block;
+	width: 1000px;
+	height: 650px;
+	background-color: rgba(255,255,255,.2);
+	margin: 5px 5px 5px 45px;
+	float: left;
+	}
+	
+	h4#nmgrf {
+	background-color: #222222;	
+	color: white;
+	font-family: FonteCorpo;
+	text-align: center;
+	padding: -1px -5px -1px -5px;
+	margin: 1px 1px 1px 1px;
+	font-size: 20px;
+	border-bottom: 2px #ff9900 solid;	
+	width: 980px;	
+	}	
+	
+	div#box {
+	padding: 1px 3px 3px 150px;
+	}
+	
+	Label#branco {
+	color: #ffffff;	
+	}	
+
+	
+	/*=================== CADASTRO DO S.C.I ======================*/
+	
+	div#interface {
+	width: 900px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5) ;
+	margin: -5px auto 0px auto;
+	padding: 10px;
+	background:rgba(255,255,255,.3);
+	}
+	
+	form{
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 0px 10px 10px 10px;
+	background-color: #ffffff;
+	}
+	
+	form p{
+	text-align: justify;
+	margin-bottom: -5px;
+	}
+	
+	fieldset#cx{
+	padding-bottom: 50px;
+	}
+	
+	fieldset#pt2{
+	background-color: #ffffff;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	}
+ 
+	td#ultimacoluna{
+	padding-bottom: 50px;
+	}	
+ 
+	table#tabela {
+	margin-left: 20px;				
+	}
+ 
+	table#tabela td{
+	padding-right: 100px;			
+	} 
+	
+	div#img {
+	padding: -30px -20px 1px 1px;
+	margin: 30px 0px 1px 1px;
+	}	
+	
+	div#geral {
+	padding: 20px 64px 20px 64px;
+	margin: 1px 1px 1px -190px;	
+	}
+	
+	div#picture {
+	padding: 100px 1px 1px 300px;
+	margin: 1px 1px 1px 1px;
+	}
+	
+	div#letra {
+	padding: 1px 1px 1px 1px;	
+	margin: 1px 1px 1px -75px;	
+	}
+	
+	/*=================== CHAT DO S.C.I ======================*/
+	
+	div#caixa {
+	padding: 5px 35px 5px 35px;
+	margin: -70px 220px 15px 400px;
+	background-color: #ffffff;
+	width: 850px;
+	height: 620px;
+	border-radius: 8px;
+	}	
+	
+	textarea#txtarea {
+	border-radius: 5px;
+	margin: 1px 5px -3px 40px;
+	padding: 1px 1px -3px 1px;
+	}	
+	
+	dix#baixo {
+	margin: -10px 5px 1px 50px; 	
+	}	
+	
+	div#cima{
+	border-bottom: 1px #888888 solid;		
+	}	
+	
+	aside#ladoesq {
+	margin: 1px 2px 5px 50px;
+	}
+	
+	aside#ladodir {
+	margin: -330px 5px 5px -80px;	
+	}
+	
+	div#informacoes {
+	height: 280px;
+	width: 240px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	padding: 10px 5px 5px 5px;
+	}
+	
+	div#bot {
+	margin: 5px 1px 1px 60px;	
+	}
+	
+	div#area {
+	background-color: #cccccc;
+	padding: 4px 5px 4px 50px;
+	border-bottom: 3px #555555 solid;
+	}
+	
+	/*=======================  PROCURAR =========================*/
+	
+	div#dicas {
+	background-color: #ffffff;	
+	}	
+	
+	div#msg {
+	background-color: rgba(255,255,255,.2);
+	padding: 15px 1px 650px 1px;	
+	}	
+	
+	label#txt {
+	Font-Family: FonteHeader;	
+	}
+	
+	/*=======================  RELATÓRIOS =========================*/
+
+	div#filtro {
+	width: 850px;
+	margin: 1px 1px 5px 200px;
+	}
+	
+	div#btnrel {
+	margin: 1px 1px 1px 200px; 	
+	}
+	
+	/*=======================  GERENCIAR =========================*/
+	
+	div#gerencia {
+	width: 850px;
+	margin: 1px 1px 5px 200px;	
+	}
+	
+	.listaimoveis {
+	width:30%
+	}
+	
+	/*=======================  INFO =========================*/
+	
+	div#info {
+	width: 850px;
+	margin: 1px 1px 5px 200px;
+	}
+	
+	/*=================== TOOLBOX =======================*/
+	
+	.onoff input.toggle {
+    display: none;
+	}
+
+	.onoff input.toggle + label {
+    display: inline-block;
+    position: relative;
+    box-shadow: inset 0 0 0px 1px #d5d5d5;
+    height: 20px;
+    width: 40px;
+    border-radius: 30px;
+	margin: -40px 1px 1px 130px;
+	padding: -40px 1px 1px 1px;
+	}
+
+	.onoff input.toggle + label:before {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 30px;
+    background: rgba(19, 191, 17, 0);
+    transition: 0.1s ease-in-out;
+	}
+
+	.onoff input.toggle + label:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 0;
+    left: 0px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.1s ease-in-out;
+	}
+
+	.onoff input.toggle:checked + label:before {
+    width: 38px;
+    background: #13bf11;
+	}
+
+	.onoff input.toggle:checked + label:after {
+    left: 25px;
+    box-shadow: inset 0 0 0 1px #13bf11, 0 2px 4px rgba(0, 0, 0, 0.2);
+	}
+	
+	div.onoff {
+	margin: -10px 1px 1px -20px;	
+	}
+	
+	label {
+	Font-Family: Letra;
+	color: #000033;
+	}
+ 
+	label#online {
+	Font-Family: FonteCorpo;
+	color: #222222;
+	margin: 40px 1px 1px 5px;
+	padding: 1px -10px -10px 1px;
+	} 
+ 
+	Input{						 
+	padding: 1px;
+	border-radius: 6px;
+	Font-Family: FonteInput;
+	}
+	
+	select {
+	border-radius: 6px;	
+	Font-Family: FonteInput;
+	}	
+	
+	TextArea {
+	border-radius: 6px;	
+	Font-Family: FonteInput;	
+	}
+	
+	.btn {
+	width: 130px;
+	font-family: Botao;
+	font-size: 18px; 
+	}
+
+	div#manipula{
+		text-align: right;
+		color: #ffffff;
+		margin-right: 100px;	   
+		height: 0px;
+	
+	}
+	

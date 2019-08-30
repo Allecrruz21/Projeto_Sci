@@ -1,0 +1,273 @@
+﻿<?php
+session_start();
+?>
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="_css/bootstrap.css">
+	<link rel="stylesheet" href="_css/bootstrap.min.css">
+	<link rel="stylesheet" href="_css/estilo.css">
+	<link rel="icon" href="_sources\icon2.png" type= "image/x-icon"/>
+    <title>Captação - SCI</title>
+  </head>
+  <body>
+    
+	<header>
+	<h1>Sistema de Captação de Imóveis</h1>	
+	</header>
+	</br>
+	<a href="menu.html"><button type="button" class="btn btn-secondary">Voltar</button></a>
+	</br></br>
+	<h4>Dados do imóvel</h4>
+	
+	<form action="php_action/create_imobiliaria.php" method="post" class="envio" enctype="multipart/form-data">
+		  <div class="form-row">
+			<div class="form-group col-md-2">
+			  <label>Código base</label>
+			  <input type="int" id="cxtxt" class="texto" placeholder="Ex.: CS-0000" name="codigo_base" id="codigo" maxlength="7">
+			</div>
+			<div class="form-group col-md-2">
+			  <label>CEP</label>
+			  <input type="int" id="cxtxt" class="texto" placeholder="Ex.: 00.000-000" name="cep" maxlength="10">
+			</div>
+		  <div class="form-group col-md-5">
+			<label>Endereço</label>
+			<input type="text" id="cxtxt" class="texto" placeholder="Ex.: Rua do Brasil" name="endereco" maxlength="30">
+		  </div>
+		  <div class="form-group  col-md-3">
+			<label>Bairro</label>
+			<input type="text" id="cxtxt" class="texto" placeholder="Ex.: Jardim das Acácias" name="bairro" maxlength="20">
+			</div>
+		  </div>
+		  <div class="form-row">
+			<div class="form-group col-md-2">
+			  <label>Cidade</label>
+			  <input type="text" id="cxtxt" class="texto" placeholder="Ex.: Recife" name="cidade" maxlength="20">
+			</div>
+			<div class="form-group col-md-1">
+			  <label>Número</label>
+			  <input type="int" id="cxtxt" class="texto" placeholder="0000" name="numero" maxlength="6">
+			</div>
+			<div class="form-group col-md-1">
+			  <label>Estado</label>
+			  <input type="text" id="cxtxt" class="texto" placeholder="Ex.: PE" name="estado" maxlength="2">
+			</div>
+			<div class="form-group col-md-6">
+			  <label>Complemento</label>
+			  <input type="text" id="cxtxt" class="texto" placeholder="Ex.: próximo ao supermercado" name="complemento" maxlength="35">
+			</div>
+			<div class="form-group col-md-2">
+				<label>Valor</label>
+				<input type="text" id="cxtxt" class="texto" placeholder="Ex.: R$ 1.000,00" name="valor">
+			</div>	
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-2">
+				  <label>Tipo de imóvel</label>
+				  <select name="tipo_imovel" class="form-control" id="cxtxt">
+					<option>-</option>
+					<option>Casa</option>
+					<option>Apartamento</option>
+					<option>Flat</option>
+					<option>Kitnet</option>
+					<option>Galpão</option>
+					<option>Loja</option>
+					<option>Sala Comercial</option>
+					<option>Terreno</option>
+					<option>Lote</option>
+				  </select>
+				</div>
+				<div class="form-group col-md-2">
+				  <label>Situação</label>
+				  <select id="inputState" class="form-control" id="cxtxt">
+					<option>-</option>
+					<option>Venda</option>
+					<option>Aluguel</option>
+				  </select>
+				</div>
+				<div class="form-group col-md-2">
+				  <label>Posição do sol</label>
+				  <select id="inputState" class="form-control" id="cxtxt" name="posicao_do_sol">
+					<option>-</option>
+					<option>Nascente</option>
+					<option>Poente</option>
+				  </select>
+				</div>
+				<div class="form-group col-md-2">
+				  <label>Estadia</label>
+				  <select id="inputState" class="form-control" id="cxtxt">
+					<option selected>-</option>
+					<option>Residencial</option>
+					<option>Comercial</option>
+				  </select>
+					</div>
+					<div class="form-group col-md-2">
+					  <label>Chaves</label>
+					  <select name="chaves" class="form-control" id="cxtxt">
+						<option>-</option>
+						<option>Proprietário</option>
+						<option>Imóvel</option>
+						<option>Corretor</option>
+						<option>Imobiliária</option>
+					  </select>
+					</div>	
+				<div class="form-group col-md-1">
+				  <label>Tamanho</label>
+				  <input type="text" id="cxtxt" class="texto" placeholder="Ex.: 12x20" name="tamanho">
+				</div>
+				<div class="form-group col-md-1">
+				  <label>Ano</label>
+				  <input type="text" id="cxtxt" class="texto" placeholder="Ex.: 1900" name="ano">
+				</div>	
+				</div>
+				</br>
+				<h6>No imóvel</h6>
+			  <div class="form-row">
+				<div class="form-group col-md-1">
+					<label>Quartos</label>
+					<input type="number" name="quarto" id="cxtxt" min="1" max="10"/>
+				</div>
+				<div class="form-group col-md-1">
+					<label>Suíte</label>
+					<input type="number" name="suite" id="cxtxt" min="0" max="10"/>
+				</div>
+				<div class="form-group col-md-1">
+					<label>Wc Social</label>
+					<input type="number" name="wc_social" id="cxtxt" min="0" max="10"/>
+				</div>
+				<div class="form-group col-md-1">
+					<label>Garagem</label>
+					<input type="number" name="Garagem" id="cxtxt" min="0" max="10"/>
+				</div>
+				<div class="form-group col-md-1">
+					<label>Salas</label>
+					<input type="number" name="salas" id="cxtxt" min="0" max="10"/>
+				</div>
+			  </div>
+				<div class="form-row">
+			<div id="um">
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" id="garagem" Name= "ckbsci[]" value="Garagem"><label class="form-check-label" for="garagem">Garagem</label>
+			</div>
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" id="churrasqueira" Name= "ckbsci[]" value="Churrasqueira"><label class="form-check-label" for="churrasqueira">Churrasqueira</label>
+			</div>
+			</div>
+			<div id="dois">
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" id="piscina" Name= "ckbsci[]" value="Piscina"><label class="form-check-label" for="piscina">Piscina</label>
+			</div>
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" id="quadra" Name= "ckbsci[]" value="Quadra Poliesportiva"><label class="form-check-label" for="quadra">Quadra poliesportiva</label>
+			</div>
+			</div>
+			<div id="tres">
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" id="rua" Name= "ckbsci[]" value="Rua calçada"><label class="form-check-label" for="rua">Rua calçada</label>
+			</div>
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" id="mezanino" Name= "ckbsci[]" value="Mezanino"><label class="form-check-label" for="mezanino">Mezanino</label>
+			</div>
+			</div>
+			<div id="quatro">
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" id="quintal" Name= "ckbsci[]" value="Quintal"><label class="form-check-label" for="quintal">Quintal</label>
+			</div>
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" id="quarto" Name= "ckbsci[]" value="Box no banheiro"><label class="form-check-label" for="quarto">Box no banheiro</label>
+			</div>
+			</div>
+			<div id="cinco">
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" id="poco" Name= "ckbsci[]" value="Poço Artesiano"><label class="form-check-label" for="poco">Poço Artesiano</label>
+			</div>
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" id="terraco" Name= "ckbsci[]" value="Terraço"><label class="form-check-label" for="terraco">Terraço</label>
+			</div>
+			</div>
+				</div>
+				<div id="espaco"></div>
+					<div class="form-group" id="fotosimovel">
+						<label id="lblfoto">Foto do imóvel</label>&nbsp;<input type="file" class="form-control-file" id="exampleFormControlFile1" name="imagem">
+					</div>	
+					
+					<div id="espaco2"></div>
+					
+					<h6>Dados do proprietário</h6>
+					
+					<div class="form-row">
+					<div class="form-group col-md-1">
+					  <label>Porcentagem</label>
+					  <input type="int" class="texto" id="cxtxt" placeholder="Ex.:100%" name="porcentagem_cliente" maxlength="4"/>
+					</div>
+					<div class="form-group col-md-6">
+					  <label>Nome</label>
+					  <input type="text" class="texto" id="cxtxt" placeholder="Ex.: João da Silva" name="nome_cliente" maxlength="40"/>
+					</div>
+					  <div class="form-group col-md-3">
+						<label>CPF</label>
+						<input type="text" class="texto" id="cxtxt" placeholder="Ex.: 000.000.000-00" name="cpf_cliente" maxlength="14"/>
+					  </div>
+					  <div class="form-group col-md-2">
+						<label>RG</label>
+						<input type="text" class="texto" id="cxtxt" placeholder="Ex.: 0.000.000" name="rg_cliente" maxlength="9"/>
+					  </div>
+					  </div>
+					  <div class="form-row">
+						<div class="form-group col-md-3">
+						  <label>Telefone</label>
+						  <input type="int" class="texto" id="cxtxt" placeholder="Ex.: (00) 0000.0000" name="telefone_cliente" maxlength="14"/>
+						</div>
+						<div class="form-group col-md-3">
+						  <label>Celular</label>
+						  <input type="int" class="texto" id="cxtxt" placeholder="Ex.: (00) 00000.0000" name="celular_cliente" maxlength="14"/>
+						</div>
+						<div class="form-group col-md-5">
+						  <label>E-mail</label>
+						  <input type="text" class="texto" id="cxtxt" placeholder="Ex.: email@dominio.com" name="email_cliente" maxlength="40"/>
+						</div>
+					  </div>
+					  <div class="form-row">
+						<div class="form-group col-md-2">
+							<label>CEP</label>
+							<input type="int" id="cxtxt" class="texto" placeholder="Ex.: 00.000-000" name="cep_cliente" maxlength="10">
+						</div>
+						<div class="form-group col-md-1">
+						  <label>Estado</label>
+						  <input type="text" id="cxtxt" class="texto" placeholder="Ex.: PE" name="estado_cliente" maxlength="2">
+						</div>
+					  <div class="form-group col-md-5">
+						<label>Endereço</label>
+						<input type="text" id="cxtxt" class="texto" placeholder="Ex.: Rua da República" name="endereco_cliente" maxlength="30">
+					  </div>
+					<div class="form-group  col-md-3">
+						<label>Bairro</label>
+						<input type="text" id="cxtxt" class="texto" placeholder="Ex.: Jardim Primavera" name="bairro_cliente" maxlength="20">
+					</div>
+					<div class="form-group col-md-1">
+					  <label>Número</label>
+					  <input type="int" id="cxtxt" class="texto" placeholder="1111" name="numero_cliente" maxlength="6">
+					</div>
+				  </div>
+				  <div class="form-row">
+					<div class="form-group col-md-3">
+					  <label>Cidade</label>
+					  <input type="text" id="cxtxt" class="texto" placeholder="Ex.: Paraíba" name="cidade_cliente" maxlength="20">
+					</div>
+					 <div class="form-group col-md-6">
+					  <label>Complemento</label>
+					  <input type="text" id="cxtxt" class="texto" placeholder="Ex.: próximo ao Shopping" name="complemento_cliente" maxlength="35">
+					</div>
+					</div>
+					 <div id="espaco3"></div>
+							<button type="submit" class="btn btn-primary">Salvar</button> &nbsp; <button type="reset" name="limpa" class="btn btn-warning">Limpar</button>
+					  </form>
+					  
+					  <div id="espaco3"> </div>
+						<footer><label id="rodape">S.C.I - Versão: 1.0.0 - &copy;Copyright 2018</label></footer>
+					
+				  </body>
+				</html>

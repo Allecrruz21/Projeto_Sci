@@ -1,0 +1,440 @@
+		/* CSS Document */
+	@charset "UTF-8";
+
+	@font-face {
+	Font-Family: 'Sistema';
+	src: url("../_fonts/_Quicksand/Quicksand-Bold.ttf");
+	}
+
+	@font-face {
+	Font-Family: 'Label';
+	src: url("../_fonts/_Roboto_Slab/RobotoSlab-Bold.ttf");
+	}
+
+	@font-face {
+	Font-Family: 'Test';
+	src: url("../_fonts/_Josefin/JosefinSans-Regular.ttf");
+	}
+
+	@font-face {
+	Font-Family: 'Input';
+	src: url("../_fonts/_Oxygen/Oxygen-Regular.ttf");
+	}
+	
+	@font-face {
+	Font-Family: 'Letra';
+	src: url("../_fonts/_Raleway/Raleway-Light.ttf");
+	}
+
+	@font-face {
+	Font-Family: 'Botao';
+	src: url("../_fonts/_OpenSans/OpenSansCondensed-LightItalic.ttf");
+	}
+	
+	/*=========== FORMATAÇÃO PADRÃO  ===============*/
+	
+	body {	
+	background: url("../_sources/cidade.jpg") no-repeat center fixed;
+	background-attachment: fixed;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+	header {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 10px 0px 5px 0px;
+	background-color: #000;
+	border-bottom: 2px #4682B4 solid;
+	
+	}
+	
+	h1 {
+	text-align: center;
+	font-family: Sistema;
+	color: #e5e5e5;
+	}
+	
+	#cep {
+	border: none;
+	border-bottom: 1px #4682B4 solid;
+	color: #4682B4;
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	display: block;
+	font-family: Input;
+	}
+	
+	#cxtxtcep1 {
+	border: none;
+	border-bottom: 1px #4682B4 solid;
+	color: #4682B4;
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	display: block;
+	font-family: Input;
+	}
+	
+	#uf {
+	border: none;
+	border-bottom: 1px #4682B4 solid;
+	color: #4682B4;
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	display: block;
+	font-family: Input;
+	}
+	
+	#rua {
+	border: none;
+	border-bottom: 1px #4682B4 solid;
+	color: #4682B4;
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	display: block;
+	font-family: Input;
+	}
+	
+	#cidade {
+	border: none;
+	border-bottom: 1px #4682B4 solid;
+	color: #4682B4;
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	display: block;
+	font-family: Input;
+	}
+	
+	#bairro {
+	border: none;
+	border-bottom: 1px #4682B4 solid;
+	color: #4682B4;
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	display: block;
+	font-family: Input;
+	}
+	
+	#cxtxt {
+	border: none;
+	border-bottom: 1px #4682B4 solid;
+	color: #4682B4;
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	display: block;
+	font-family: Input;
+	}
+		
+	#cxtxtvalor {
+	border: none;
+	border-bottom: 1px #4682B4 solid;
+	color: #4682B4;
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	display: block;
+	font-family: Input;
+	}
+	
+	#cxtxtcpfprop {
+	border: none;
+	border-bottom: 1px #4682B4 solid;
+	color: #4682B4;
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	display: block;
+	font-family: Input;
+	}
+	
+	#cxtxtrgprop {
+	border: none;
+	border-bottom: 1px #4682B4 solid;
+	color: #4682B4;
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	display: block;
+	font-family: Input;
+	}
+	
+	#cxtxttelprop {
+	border: none;
+	border-bottom: 1px #4682B4 solid;
+	color: #4682B4;
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	display: block;
+	font-family: Input;
+	}
+	
+	#cxtxtcelprop {
+	border: none;
+	border-bottom: 1px #4682B4 solid;
+	color: #4682B4;
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	display: block;
+	font-family: Input;
+	}
+	
+	footer {
+	
+	background-color: #000;
+	border-top: 2px #4682B4 solid;
+	text-align: center;
+	padding-top:6%;
+	padding-bottom:6%;
+	}
+	
+	
+	
+	#espaco {
+	height: 60px;	
+	}
+	
+	#espaco2 {
+	height: 100px;	
+	}
+	
+	#espaco3 {
+	height: 30px;	
+	}
+	
+	/*=========== LOGIN  ===============*/
+	
+	#caixalogin {
+	background-color: #ffffff;
+	height: 300px;
+	width: 350px;
+	border-radius: 5px;
+	padding: 20px 10px 5px 10px;
+	margin: 50px auto;
+	}
+	
+	#lbl_log {
+	font-family: Label;
+	font-size: 20px;
+	color: #4682B4;
+	margin: 2px 1px 5px 120px;
+	}
+	
+	#texto_login_mensg{
+		text-align:center;
+		color:red;
+	}
+	
+	#texto_menu_mensg{
+		font-family: Label;
+	    font-size: 20px;
+		color:white;
+		border-bottom: 2px #2682d0 solid;
+		
+	}
+	
+	/*=========== CADASTRO IMOB ===============*/
+	
+	h5 {
+	color: #4682B4;
+	background-color: #000000;
+	border-bottom: 2px #2682d0 solid;
+	text-align: center;
+	font-family: Label;
+	font-size: 20px;
+	padding: 8px 0px 8px 0px;
+	}
+	
+	#cadimob {
+	background-color: #fff;
+	height: 100%;
+	}
+	
+	#cadcor {
+	background-color: #fff;
+	height: 100%;
+	}
+
+    .btnsalvar {
+	border: none;	
+	font-family: Label;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #4682B4;
+	color: #fff;
+	padding: 6px;
+	}
+	
+	.btnsalvar:hover {
+	border: none;	
+	font-family: Label;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #2682D0;
+	color: #444;
+	padding: 6px;
+	}
+	
+	.btnlimpar {
+	border: none;	
+	font-family: Label;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #FFFF00;
+	color: #fff;
+	padding: 6px;
+	}
+	
+	.btnlimpar:hover {
+	border: none;	
+	font-family: Label;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #FFD700;
+	color: #444;
+	padding: 6px;
+	}
+	
+	.btnvoltar {
+	border: none;	
+	font-family: Label;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #EEE9E9;
+	color: #fff;
+	padding: 6px;
+	}
+	
+	.btnvoltar:hover {
+	border: none;	
+	font-family: Label;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #CDC9C9;
+	color: #444;
+	padding: 6px;
+	}
+	
+	/*=========== MENU ===============*/
+	
+	#central {
+	margin: 0px auto 0px 40px;	
+	}
+	
+	#caixa {
+	height: 200px;
+	width: 280px;
+	background-color: #fff;
+	border-radius: 5px;
+	float: left;
+	margin: 1px 20px 2px 1px;
+	}
+	
+	#imgnum {
+	margin: 1px 2px 2px 5px;	
+	}
+	
+	#inf {
+	color: #333333;
+	font-size: 50px;
+	font-family: Label;
+	text-align: center;
+	}
+	
+	#infx {
+	color: #2682d0;
+	font-size: 32px;
+	font-family: Label;
+	margin: 1px 2px 2px 5px;
+	}
+	
+	/*=========== CADASTRO IMÓVEL ===============*/
+	
+	.envio {
+	height: 100%;
+	background-color: #fff;
+	padding: 10px 5px 0px 5px;
+	}
+	
+	h4 {
+	text-align: center;
+	padding: 5px 0px 0px 0px;
+	margin-bottom: 0px;
+	background-color: #000;
+	color: #e5e5e5;
+	border-bottom: 2px #2682d0 solid;
+	font-size: 26px;
+	font-family: Label;
+	}
+	
+	h6 {
+	color: #2682d0;
+	padding: 3px 0px 3px 0px;
+	text-align: center;
+	font-family: Label;
+	font-size: 20px;
+	}
+
+	.form-control {
+	border: none;
+	border-bottom: 1px #2682d0 solid;
+	text-align: center;
+	color: #2682d0;
+	}
+	
+	#um {
+	float: left;
+	margin: 1px 8px 10px 5px;
+	}
+	
+	#dois {
+	float: left;
+	margin: 1px 8px 10px 5px;
+	}
+	
+	#tres {
+	float: left;
+	margin: 1px 8px 10px 5px;
+	}
+	
+	#quatro {
+	float: left;
+	margin: 1px 8px 10px 5px;
+	}
+	
+	#cinco {
+	float: left;
+	margin: 1px 90px 10px 5px;
+	}
+	
+	#marq {
+	background-color: red;
+	margin: 2px 50px 2px 12px;
+	}
+	
+	#fotosimovel {
+	float: left;	
+	}
+	
+	.buttons {
+	height: 80px;
+	float: left;
+	margin: 2px 4px 4px 20px;
+	}
+	
+	/*=========== GERENCIAR ===============*/
+	
+	#frmbranco {
+	background-color: #fff;
+	height: 100%;
+	}
+    	

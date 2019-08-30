@@ -1,0 +1,414 @@
+ @charset "UTF-8";
+
+	/*========== FONTES ==========*/
+
+	@font-face {
+	Font-Family: 'PIB';
+	src: url("../_fonts/_Lato/Lato-Black.ttf");
+	}
+
+	@font-face {
+	Font-Family: 'Slogan';
+	src: url("../_fonts/_Titillium_Web/TitilliumWeb-SemiBold.ttf");
+	}
+	
+	@font-face {
+	Font-Family: 'Botão';
+	src: url("../_fonts/_Lato/Lato-Bold.ttf");
+	}
+	
+	@font-face {
+	Font-Family: 'Label';
+	src: url("../_fonts/_Josefin/JosefinSlab-Bold.ttf");
+	}
+	
+	/*========== FORMATAÇÃO PADRÃO ==========*/
+ 
+	body {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	background-color: #e5e5e5;
+	} 
+	
+	header {
+	position: relative;
+	background: url("../_images/sofa.jpg") no-repeat;
+	height: 650px;
+	width: 100%;
+	}
+	
+	.cabeca {
+	
+	
+	
+	box-shadow: 3px 3px 6px #444444;
+	}
+	
+	a {
+	color: #EE0000;
+	font-size: 24px;
+	font-family: Botão;
+	margin: 5px;
+	text-decoration: none;
+	text-shadow: 2px 2px 4px #cccccc;
+	}
+	
+	div#options a:hover {
+	border-bottom: 2px #333333 solid;
+	padding: 4px;
+	border-radius: 5px;
+	color: white;
+	background-color: #CD0000;
+	font-size: 24px;
+	font-family: Botão;
+	margin: 5px;
+	text-decoration: none;
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	}
+	
+	div#imgmenu {
+	width: 128px;
+	height: 128px;
+	margin: 20px 2px 3px 1120px;
+	}
+	
+	div#rdpinf {
+	height: 150px;
+	background: linear-gradient(to top, #FF6A6A, #8B0000);
+	padding: 2px 2px 2px 2px;	
+	}
+	
+	label#rdp {
+	color: #ffffff;
+	font-family: Label;
+	margin: 4px 4px 8px 280px;
+	}
+	
+	/*========== CAIXA DE PESQUISA ==========*/
+	
+	h2#cxpesq {
+	font-size: 34px;
+	font-family: Label;
+	color: #EE0000;
+	margin: -150px 5px 160px 350px;
+	}
+	
+	div#cxpesquisa {
+	background-color: #EE0000;
+	height: 360px;
+	width: 830px;
+	opacity: 0.8;
+	margin: -155px 10px 4px 100px;
+	padding: 20px 10px 20px 10px;
+	border-radius: 10px;
+	}
+	
+	div#centralizar {
+	margin: 10px 10px 10px -10px;	
+	}
+	
+	label#nmselect {
+	font-size: 22px;
+	font-family: Slogan;
+	color: #ffffff;
+	}
+	
+	.interesse {
+	font-size: 22px;
+	font-family: Slogan;
+	color: #CD0000;
+	border-radius: 5px;
+	}
+	
+	.tpimovel {
+	font-size: 22px;
+	font-family: Slogan;
+	color: #CD0000;
+	border-radius: 5px;
+	}
+	
+	.imovel {
+	font-size: 22px;
+	font-family: Slogan;
+	color: #CD0000;
+	border-radius: 5px;
+	text-align: center;
+	}
+	
+	.btnsearch {
+	border: none;
+	margin: 5px 4px 2px 400px;
+	padding: 10px 15px 10px 15px;
+	color: #CD0000;
+	background-color: #ffffff;
+	opacity: 1;
+	border-radius: 4px;
+	font-family: Botão;
+	font-size: 18px;
+	}
+	
+	div#um {
+	margin: 5px 20px 5px 150px;
+	}
+	
+	div#dois {
+	margin: 5px 20px 5px 300px;
+	}
+	
+	div#tres {
+	margin: 5px 20px 5px 200px;
+	}
+	
+	div#quatro {
+	margin: 5px 20px 5px 150px;	
+	}
+
+	div#cinco {
+	margin: 5px 20px 5px 200px;	
+	}
+	
+	/* Imagem para baixo */
+	
+	div#pesquisa {
+	height: 850px;	
+	}
+	
+	label#info {
+	font-size: 16px;
+	color: #333333;
+	font-family: Label;
+	}
+	
+	h4 {
+	font-size: 36px;
+	font-family: Botão;
+	color: #333333;
+	text-align: center;
+	border-bottom: 2px #888888 solid;
+	}
+	
+	/* ================= BOTÕES PASSAR / VOLTAR =============== */
+	
+	.btndireito {
+	height: 55px;
+	width: 55px;
+	border: none;
+	border-radius: 30px;
+	background-color: #FF6A6A;
+	padding: 3px 4px 1px 4px;
+	}
+	
+	.btnesquerdo {
+	height: 55px;
+	width: 55px;
+	border: none;
+	border-radius: 30px;
+	background-color: #FF6A6A;
+	padding: 3px 4px 1px 4px;
+	}
+	
+	.btnesquerdo:hover {
+	height: 55px;
+	width: 55px;
+	border: none;
+	border-radius: 30px;
+	background-color: #EE0000;
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	}
+	
+	.btndireito:hover {
+	height: 55px;
+	width: 55px;
+	border: none;
+	border-radius: 30px;
+	background-color: #EE0000;
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	}
+	
+	div#btnesq1 {
+	padding: 1px;
+	margin: 190px 1px 1px -20px;
+	}
+	
+	div#btndir1 {
+	padding: 1px;
+	margin: -52px 1px 1px 1050px;
+	}
+	
+	/* =====-----===== */
+	
+	div#textoloc {
+	height: 70px;
+	background-color: #333333;
+	}
+	
+	div#imoveisres {
+	height: 700px;
+	width: 1100px;
+	margin: 15px 10px 10px 75px;
+	padding: 40px 10px 5px 30px;
+	box-shadow: 3px 3px 4px #222222;
+	background-color: #ffffff;
+	}
+	
+	h4#loc {
+	border-bottom: 2px #daa520 solid;
+	color: #444444;
+	font-size: 20px;
+	font-family: Label;
+	}
+	
+	div#imgloc {
+	margin: -220px 10px 5px 80px;	
+	}
+	
+	div#imagem1 {
+	margin: -70px 1px 1px 250px;	
+	}
+	
+	div#info1 {
+	background-color: #FF6A6A;
+	height: 200px;
+	width: 360px;
+	margin: 40px 5px 20px 360px;
+	padding: 15px 10px 10px 32px;
+	border-radius: 4px;
+	}
+	
+	.inf1 {
+	font-size: 14px; color: #444444; font-family: Label; border-bottom: 2px #daa520 solid;
+	}
+	
+	.inf2 {
+	font-size: 14px; color: #444444; font-family: Label; border-bottom: 2px #daa520 solid;
+	}
+	
+	.inf3 {
+	font-size: 14px; color: #444444; font-family: Label; border-bottom: 2px #daa520 solid;
+	}
+	
+	.inf4 {
+	font-size: 14px; color: #444444; font-family: Label; border-bottom: 2px #daa520 solid;
+	}
+	
+	.inf5 {
+	font-size: 14px; color: #444444; font-family: Label; border-bottom: 2px #daa520 solid;
+	}
+	
+	.inf6 {
+	font-size: 14px; color: #444444; font-family: Label; border-bottom: 2px #daa520 solid;
+	}
+	
+	
+	
+	/*========== PÁGINA PESQUISADO ==========*/
+	
+	header#cima2 {
+	width: 100%;
+	height: 180px;
+	background: linear-gradient(to left, #FF6A6A, #8B0000);
+	box-shadow: 3px 3px 6px #444444;
+	position: relative;
+	margin: -30px auto 0px auto;
+	}
+	
+	aside#imovel {
+	height: 600px;
+	width: 820px;
+	margin: 42px 1px 1px 1px;
+	background-color: #333333;
+	}
+		
+	aside#descricao {
+	height: 560px;
+	width: 450px;
+	background-color: #d3d3d3;
+	margin: -600px 3px 10px 830px;
+	padding: 25px 40px 10px 20px;
+	border-radius: 3px;
+	}
+	
+	div#detalhes {
+	border-right: 2px #777777 solid;
+	height: 350px;
+	width: 233px;
+	margin: -33px 1px 1px 1px;
+	}
+	
+	div#dados {
+	height: 350px;
+	width: 240px;
+	margin: -351px 1px 1px 244px;
+	}
+	
+	div#descsup {
+	height: 100px;
+	width: 460px;
+	margin: -10px 1px 4px 1px;
+	padding: 15px 2px 2px 10px;
+	border-bottom: 2px #777777 solid;
+	}
+	
+	h3#desci {
+	font-family: Descricao;
+	color: #333333;
+	margin: 1px 3px 1px 5px;
+	}
+	
+	h3#desc {
+	font-family: Descricao;
+	color: #333333;
+	text-align: center;
+	}
+	
+	h6#options {
+	font-size: 16px;
+	font-family: Label;
+	margin: 4px 1px 1px 20px;
+	}
+	
+	label#code {
+	font-family: Label;
+	font-size: 16px;
+	color: #333333;
+	}
+	
+	div#grey {
+	height: 100px;
+	width: 300px;
+	background-color: #d3d3d3;
+	margin: 10px 1px 1px 830px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 4px #222222;
+	}
+	
+	div#btnopt {
+	padding: 10px 5px 10px 15px;	
+	}
+	
+	#local {
+	height: 60px;
+	width: 80px;
+	border: none;
+	background-color: #000022;
+	font-family: Label;
+	color: #ffffff;
+	border-radius: 4px;
+	font-family: Label;
+	}
+	
+	#volta {
+	height: 60px;
+	width: 80px;
+	border: none;
+	background-color: #999999;
+	font-family: Label;
+	color: #ffffff;
+	border-radius: 4px;
+	}
